@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class AndroidClasses : MonoBehaviour 
 {
+#if UNITY_ANDROID
 	private static AndroidJavaClass jc = new AndroidJavaClass("com.unity3d.player.UnityPlayer"); 
 	private static AndroidJavaObject jo = jc.GetStatic<AndroidJavaObject>("currentActivity"); 
 
@@ -16,22 +17,6 @@ public class AndroidClasses : MonoBehaviour
 	{
 		jo.Call("makeToast",message);
 	}
-#region GPGS
-	public static void submitScore(int score)
-	{
-		jo.Call("submitScore", score);
-	}
-	public static void showScoreboard()
-	{
-		jo.Call("showScoreboard");
-	}
-	public static void showAchievements()
-	{
-		jo.Call("showAchievements");
-	}
-	public static void unlockAchievement(int id)
-	{
-		jo.Call("unlockAchievement",id);
-	}
-#endregion
+
+#endif
 }
