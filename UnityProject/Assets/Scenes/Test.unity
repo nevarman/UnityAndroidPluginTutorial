@@ -112,6 +112,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1b8c8aeb90dd44d3bb65a762e4e5757, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  achievementId: 0
+  score: 10
 --- !u!1 &978664887
 GameObject:
   m_ObjectHideFlags: 0
