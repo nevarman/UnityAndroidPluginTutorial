@@ -1,7 +1,7 @@
 UnityAndroidPluginTutorial
 ==========================
 
-Unity3d android plugin tutorial projects @ http://nevzatarman.wordpress.com/
+
 This library includes the projects and examples from my tutorial page http://nevzatarman.wordpress.com/
 
 Usage: First import Eclipse project into Eclipse.
